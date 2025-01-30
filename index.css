@@ -1,0 +1,76 @@
+*{
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+body {
+  background-color: #0a202d;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 20px;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+div#root{
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.main {
+  background-color: #f3f3f3;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.die-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.die-container button {
+  cursor: pointer;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+
+.die-container .held-button{
+  background-color: #59e391;
+}
+
+.die-container .wrong{
+  background-color: rgb(247, 86, 86);
+}
+
+.roll-button{
+  padding: 10px 40px;
+  color: white;
+  background-color: #412ce6;
+  font-size: 1.2rem;
+  border: none ;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.guide{
+  top: 0;
+  width: 350px;
+  background-color: #f3f3f3;
+}
